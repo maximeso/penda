@@ -41,7 +41,7 @@ export class ChildrenDetail extends React.Component<IChildrenDetailProps> {
               {childrenEntity.tutors
                 ? childrenEntity.tutors.map((val, i) => (
                     <span key={val.id}>
-                      <a>{val.id}</a>
+                      <a>{val.email}</a>
                       {i === childrenEntity.tutors.length - 1 ? '' : ', '}
                     </span>
                   ))

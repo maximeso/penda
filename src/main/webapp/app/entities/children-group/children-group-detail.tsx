@@ -45,7 +45,7 @@ export class ChildrenGroupDetail extends React.Component<IChildrenGroupDetailPro
               {childrenGroupEntity.childrens
                 ? childrenGroupEntity.childrens.map((val, i) => (
                     <span key={val.id}>
-                      <a>{val.id}</a>
+                      <a>{val.name}</a>
                       {i === childrenGroupEntity.childrens.length - 1 ? '' : ', '}
                     </span>
                   ))

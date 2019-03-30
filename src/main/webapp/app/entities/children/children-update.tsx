@@ -128,7 +128,7 @@ export class ChildrenUpdate extends React.Component<IChildrenUpdateProps, IChild
                     {users
                       ? users.map(otherEntity => (
                           <option value={otherEntity.id} key={otherEntity.id}>
-                            {otherEntity.id}
+                            {otherEntity.email}
                           </option>
                         ))
                       : null}

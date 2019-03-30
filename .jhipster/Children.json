@@ -21,7 +21,7 @@
             "otherEntityName": "user",
             "otherEntityRelationshipName": "children",
             "relationshipName": "tutors",
-            "otherEntityField": "id",
+            "otherEntityField": "email",
             "ownerSide": true
         },
         {
