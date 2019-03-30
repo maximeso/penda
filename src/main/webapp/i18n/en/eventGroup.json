@@ -1,0 +1,23 @@
+{
+  "pendaApp": {
+    "eventGroup": {
+      "home": {
+        "title": "Event Groups",
+        "createLabel": "Create a new Event Group",
+        "createOrEditLabel": "Create or edit a Event Group"
+      },
+      "created": "A new Event Group is created with identifier {{ param }}",
+      "updated": "A Event Group is updated with identifier {{ param }}",
+      "deleted": "A Event Group is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Event Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Event Group"
+      },
+      "createdDate": "Created Date",
+      "name": "Name",
+      "childrenGroup": "Children Group"
+    }
+  }
+}

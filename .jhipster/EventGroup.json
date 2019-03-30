@@ -1,0 +1,38 @@
+{
+    "name": "EventGroup",
+    "fields": [
+        {
+            "fieldName": "createdDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "childrenGroup",
+            "otherEntityRelationshipName": "eventGroups",
+            "relationshipValidateRules": "required",
+            "relationshipName": "childrenGroup",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190330014404",
+    "entityTableName": "event_group",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

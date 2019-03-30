@@ -1,0 +1,24 @@
+{
+  "pendaApp": {
+    "messageUser": {
+      "home": {
+        "title": "MessageUsers",
+        "createLabel": "Créer un nouveau Message User",
+        "createOrEditLabel": "Créer ou éditer un Message User"
+      },
+      "created": "Un nouveau Message User a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Message User avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Message User avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Message User {{ id }} ?"
+      },
+      "detail": {
+        "title": "Message User"
+      },
+      "createdDate": "Created Date",
+      "message": "Message",
+      "from": "From",
+      "to": "To"
+    }
+  }
+}

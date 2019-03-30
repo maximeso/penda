@@ -1,0 +1,46 @@
+{
+    "name": "Observation",
+    "fields": [
+        {
+            "fieldName": "createdDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "observation",
+            "relationshipValidateRules": "required",
+            "relationshipName": "creator",
+            "otherEntityField": "email"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "children",
+            "otherEntityRelationshipName": "observations",
+            "relationshipValidateRules": "required",
+            "relationshipName": "children",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20190330014400",
+    "entityTableName": "observation",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

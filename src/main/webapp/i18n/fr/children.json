@@ -1,0 +1,24 @@
+{
+  "pendaApp": {
+    "children": {
+      "home": {
+        "title": "Children",
+        "createLabel": "Créer un nouveau Children",
+        "createOrEditLabel": "Créer ou éditer un Children"
+      },
+      "created": "Un nouveau Children a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Children avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Children avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Children {{ id }} ?"
+      },
+      "detail": {
+        "title": "Children"
+      },
+      "name": "Name",
+      "observations": "Observations",
+      "tutors": "Tutors",
+      "childrenGroup": "Children Group"
+    }
+  }
+}
