@@ -1,0 +1,51 @@
+{
+    "name": "ChildrenGroup",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "childrenGroup",
+            "relationshipName": "responsable",
+            "otherEntityField": "email",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "messageGroup",
+            "otherEntityRelationshipName": "childrenGroup",
+            "relationshipName": "messageGroups"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "eventGroup",
+            "otherEntityRelationshipName": "childrenGroup",
+            "relationshipName": "eventGroups"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "children",
+            "otherEntityRelationshipName": "childrenGroup",
+            "relationshipName": "childrens",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190330014403",
+    "entityTableName": "children_group",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

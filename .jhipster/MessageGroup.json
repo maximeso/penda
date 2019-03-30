@@ -1,0 +1,46 @@
+{
+    "name": "MessageGroup",
+    "fields": [
+        {
+            "fieldName": "createdDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "message",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "messageGroup",
+            "relationshipValidateRules": "required",
+            "relationshipName": "creator",
+            "otherEntityField": "email"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "childrenGroup",
+            "otherEntityRelationshipName": "messageGroups",
+            "relationshipValidateRules": "required",
+            "relationshipName": "childrenGroup",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20190330014401",
+    "entityTableName": "message_group",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,25 @@
+{
+  "pendaApp": {
+    "childrenGroup": {
+      "home": {
+        "title": "Children Groups",
+        "createLabel": "Create a new Children Group",
+        "createOrEditLabel": "Create or edit a Children Group"
+      },
+      "created": "A new Children Group is created with identifier {{ param }}",
+      "updated": "A Children Group is updated with identifier {{ param }}",
+      "deleted": "A Children Group is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Children Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Children Group"
+      },
+      "name": "Name",
+      "responsable": "Responsable",
+      "messageGroups": "Message Groups",
+      "eventGroups": "Event Groups",
+      "childrens": "Childrens"
+    }
+  }
+}
