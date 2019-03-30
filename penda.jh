@@ -38,9 +38,9 @@ relationship OneToOne {
 }
 
 relationship OneToMany {
-    Children{observations} to Observation{children(name) required},
-    ChildrenGroup{messageGroups} to MessageGroup{childrenGroup(name) required},
-    ChildrenGroup{eventGroups} to EventGroup{childrenGroup required}
+    Children{observations(name)} to Observation{children(name) required},
+    ChildrenGroup{messageGroups(name)} to MessageGroup{childrenGroup(name) required},
+    ChildrenGroup{eventGroups(name)} to EventGroup{childrenGroup required}
 }
 
 relationship ManyToOne {
@@ -52,8 +52,8 @@ relationship ManyToOne {
 }
 
 relationship ManyToMany {
-	Children{tutors} to User,
-	ChildrenGroup{childrens} to Children{childrenGroup}
+	Children{tutors(email)} to User,
+	ChildrenGroup{childrens(name)} to Children{childrenGroup}
 }
 paginate all with infinite-scroll
 
