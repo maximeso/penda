@@ -8,6 +8,13 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "children": "Children",
+        "observation": "Observation",
+        "messageGroup": "Message Group",
+        "messageUser": "Message User",
+        "childrenGroup": "Children Group",
+        "eventGroup": "Event Group",
+        "recipe": "Recipe",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
