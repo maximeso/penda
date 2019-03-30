@@ -1,0 +1,61 @@
+entity Children {
+	name String required
+}
+
+entity Observation {
+	createdDate LocalDate required,
+    description String required
+}
+
+entity MessageGroup {
+	createdDate LocalDate required,
+    message String required
+}
+
+entity MessageUser {
+	createdDate LocalDate required,
+    message String required
+}
+
+entity ChildrenGroup {
+	name String required
+}
+
+entity EventGroup {
+	createdDate LocalDate required,
+	name String required
+}
+
+entity Recipe {
+	name String required,
+	created LocalDate required,
+    description String required,
+    actived Boolean required
+}
+
+relationship OneToOne {
+    ChildrenGroup{responsable(email)} to User
+}
+
+relationship OneToMany {
+    Children{observations} to Observation{children(name) required},
+    ChildrenGroup{messageGroups} to MessageGroup{childrenGroup(name) required},
+    ChildrenGroup{eventGroups} to EventGroup{childrenGroup required}
+}
+
+relationship ManyToOne {
+    Observation{creator(email) required} to User,
+    Recipe{creator(email) required} to User,
+    MessageGroup{creator(email) required} to User,
+    MessageUser{from(email)} to User,
+    MessageUser{to(email)} to User
+}
+
+relationship ManyToMany {
+	Children{tutors} to User,
+	ChildrenGroup{childrens} to Children{childrenGroup}
+}
+paginate all with infinite-scroll
+
+service all with serviceClass
+
