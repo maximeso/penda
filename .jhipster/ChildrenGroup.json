@@ -35,7 +35,7 @@
             "otherEntityName": "children",
             "otherEntityRelationshipName": "childrenGroup",
             "relationshipName": "childrens",
-            "otherEntityField": "id",
+            "otherEntityField": "name",
             "ownerSide": true
         }
     ],
