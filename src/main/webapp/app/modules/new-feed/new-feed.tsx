@@ -24,7 +24,7 @@ export class NewFeed extends React.Component<INewFeedProp> {
           <div className="app-feed-item">
             <h2 className="app-feed-item-title">
               <a href="/react-newsfeed/articles/1" className="app-feed-item-link">
-                Peinture avec les mains
+                Aujourd'hui, nous fesons une activité de peinture avec les mains !
               </a>
             </h2>
             <a href="/react-newsfeed/articles/1">
@@ -34,17 +34,7 @@ export class NewFeed extends React.Component<INewFeedProp> {
                 alt="Article description"
               />
             </a>
-            <p className="app-feed-item-summary">
-              On développe la créativité des enfants tout en s’amusant avec de la peinture.{' '}
-              <a href="/react-newsfeed/articles/1">Suite...</a>
-            </p>
-            <div className="app-feed-item-topics">
-              <ul className="app-feed-item-topics-list">
-                <li className="app-feed-item-topics-list-item">De la peinture à doigts (plusieurs couleurs)</li>
-                <li className="app-feed-item-topics-list-item">1 feuille de papier</li>
-                <li className="app-feed-item-topics-list-item">Tes mains !</li>
-              </ul>
-            </div>
+            <p className="app-feed-item-summary">On développe la créativité des enfants tout en s’amusant avec de la peinture.</p>
           </div>
         </div>
       </Row>

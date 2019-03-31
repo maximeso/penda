@@ -21,7 +21,7 @@ export class Messenger extends React.Component<INewFeedProp> {
       <Row>
         <div className="message-list">
           <div className="toolbar">
-            <h1 className="toolbar-title">Conversation Title</h1>
+            <h1 className="toolbar-title">Éducatrice</h1>
             <div className="right-items">
               <i className="toolbar-button ion-ios-information-circle-outline" />
               <i className="toolbar-button ion-ios-videocam" />
@@ -30,7 +30,7 @@ export class Messenger extends React.Component<INewFeedProp> {
           </div>
           <div className="message-list-container">
             <div className="message mine start end">
-              <div className="timestamp">Saturday, March 30, 2019 3:46 PM</div>
+              <div className="timestamp">Lundi le 1 avril, 2019 3:46 PM</div>
               <div className="bubble-container">
                 <div className="bubble" title="Saturday, March 30, 2019 3:46 PM">
                   Bonjour!
