@@ -10,21 +10,39 @@ Main page styles
   background: url('../../../static/images/bambo.png') no-repeat center top;
   background-size: contain;
 }
+
 .container-homepage {
   overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.title-homepage {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .card-homepage {
-  height: 150px;
+  height: 200px;
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.125);
+}
+
+.link-homepage {
+  & :hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: #6c9400;
+    color: black;
+  }
 }
 
 .card-img-homepage {
-  width: 100px;
+  width: 150px;
   margin-left: auto;
   margin-right: auto;
 
   &.large {
-    width: 155px;
+    width: 240px;
   }
 }
 
@@ -33,11 +51,19 @@ Main page styles
   display: flex;
   text-align: center;
   padding: 0;
+  width: 200px;
   flex: none;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -100px;
 }
 
 .card-title-homepage {
   text-align: center;
   width: 100%;
-  margin-bottom: 0px;
+}
+
+.img-homepage {
+  overflow: hidden;
 }

@@ -39,6 +39,9 @@ Navbar styles
 ========================================================================== */
 .jh-navbar {
   padding: 0.2em 1em;
+  background-color: #785027;
+  height: 85px;
+
   .profile-image {
     margin: -10px 0px;
     height: 40px;
@@ -61,6 +64,7 @@ Navbar styles
   }
   a.nav-link {
     font-weight: 400;
+    color: white;
     > span {
       margin-left: 5px;
     }
@@ -88,6 +92,7 @@ Navbar styles
     height: 35px;
     width: auto;
     display: inline-block;
+    margin-top: -20px;
     img {
       height: 75px;
     }

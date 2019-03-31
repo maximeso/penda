@@ -23,15 +23,11 @@ export class Recipe extends React.Component<IRecipeProp> {
                 <th className="posters" data-sort-order="posters" />
 
                 <th className="default" data-sort-order="default">
-                  Recette
+                  Recettes & Articles
                 </th>
 
                 <th className="posts sortable num" data-sort-order="posts">
-                  Replies
-                </th>
-
-                <th className="views sortable num" data-sort-order="views">
-                  Views
+                  Commentaires
                 </th>
               </tr>
             </thead>
@@ -60,11 +56,6 @@ export class Recipe extends React.Component<IRecipeProp> {
                   <a className="posts-map badge-posts heatmap-" href="">
                     <span className="number">0</span>
                   </a>
-                </td>
-                <td className="num views heatmap-low">
-                  <span className="number" title="this topic has been viewed 1,021 times">
-                    1.0k
-                  </span>
                 </td>
               </tr>
             </tbody>

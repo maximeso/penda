@@ -23,10 +23,9 @@ export class NewFeed extends React.Component<INewFeedProp> {
         <div className="app-feed-wrapper">
           <div className="app-feed-item">
             <h2 className="app-feed-item-title">
-              <a href="/react-newsfeed/articles/1" className="app-feed-item-link">
-                Aujourd'hui, nous fesons une activité de peinture avec les mains !
-              </a>
+              <span className="app-feed-item-link">Aujourd'hui, activité de peinture avec les mains !</span>
             </h2>
+            <p className="app-feed-item-summary">On développe la créativité des enfants tout en s’amusant avec de la peinture.</p>
             <a href="/react-newsfeed/articles/1">
               <img
                 className="app-feed-item-img"
@@ -34,7 +33,6 @@ export class NewFeed extends React.Component<INewFeedProp> {
                 alt="Article description"
               />
             </a>
-            <p className="app-feed-item-summary">On développe la créativité des enfants tout en s’amusant avec de la peinture.</p>
           </div>
         </div>
       </Row>

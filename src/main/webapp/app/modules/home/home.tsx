@@ -20,12 +20,12 @@ export class Home extends React.Component<IHomeProp> {
     return (
       <Row className="container-homepage">
         <Col md="9">
-          <h2>
+          <h2 className="title-homepage">
             <Translate contentKey="home.title">Welcome, Java Hipster!</Translate>
           </h2>
           <Row>
             <Col md="4">
-              <Link to="/new-feed">
+              <Link className="link-homepage" to="/new-feed">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/group.png" />
                   <CardBody className="card-body-homepage">
@@ -35,7 +35,7 @@ export class Home extends React.Component<IHomeProp> {
               </Link>
             </Col>
             <Col md="4">
-              <Link to="/agenda">
+              <Link className="link-homepage" to="/agenda">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage large" src="/content/images/agenda.png" />
                   <CardBody className="card-body-homepage">
@@ -45,7 +45,7 @@ export class Home extends React.Component<IHomeProp> {
               </Link>
             </Col>
             <Col md="4">
-              <Link to="/messenger">
+              <Link className="link-homepage" to="/messenger">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/messenger.png" />
                   <CardBody className="card-body-homepage">
@@ -58,7 +58,7 @@ export class Home extends React.Component<IHomeProp> {
           <br />
           <Row>
             <Col md="4">
-              <Link to="/forum">
+              <Link className="link-homepage" to="/forum">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage large" src="/content/images/forum.png" />
                   <CardBody className="card-body-homepage">
@@ -68,7 +68,7 @@ export class Home extends React.Component<IHomeProp> {
               </Link>
             </Col>
             <Col md="4">
-              <Link to="/appointment">
+              <Link className="link-homepage" to="/appointment">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/appointment.png" />
                   <CardBody className="card-body-homepage">
@@ -78,7 +78,7 @@ export class Home extends React.Component<IHomeProp> {
               </Link>
             </Col>
             <Col md="4">
-              <Link to="/recipe">
+              <Link className="link-homepage" to="/recipe">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/recipe.png" />
                   <CardBody className="card-body-homepage">
@@ -89,7 +89,7 @@ export class Home extends React.Component<IHomeProp> {
             </Col>
           </Row>
         </Col>
-        <Col md="3" className="pad">
+        <Col md="3" className="pad img-homepage">
           <span className="hipster rounded" />
         </Col>
       </Row>

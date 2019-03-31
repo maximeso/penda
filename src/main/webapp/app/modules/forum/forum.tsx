@@ -21,21 +21,13 @@ export class Forum extends React.Component<IForumProp> {
             <thead>
               <tr>
                 <th className="default" data-sort-order="default">
-                  Forum
+                  FORUM
                 </th>
 
                 <th className="posters" data-sort-order="posters" />
 
                 <th className="posts sortable num" data-sort-order="posts">
-                  Replies
-                </th>
-
-                <th className="views sortable num" data-sort-order="views">
-                  Views
-                </th>
-
-                <th className="activity sortable num" data-sort-order="activity">
-                  Activity
+                  Réponses
                 </th>
               </tr>
             </thead>
@@ -44,7 +36,7 @@ export class Forum extends React.Component<IForumProp> {
                 <td className="main-link clearfix" colSpan={1}>
                   <span className="link-top-line">
                     <a className="title raw-link raw-topic-link" data-topic-id="81" href="/t/about-the-reactjs-category/81">
-                      About the ReactJS category
+                      La propreté
                     </a>
                     <span className="topic-post-badges" />
                   </span>
@@ -68,30 +60,13 @@ export class Forum extends React.Component<IForumProp> {
                     <span className="number">0</span>
                   </a>
                 </td>
-                <td className="num views heatmap-low">
-                  <span className="number" title="this topic has been viewed 1,021 times">
-                    1.0k
-                  </span>
-                </td>
-
-                <td
-                  className="num age coldmap-high activity"
-                  title="First post: Sep 30, 2014 5:02 pm
-Posted: Jan 30, 2017 7:21 am"
-                >
-                  <a className="post-activity" href="/t/about-the-reactjs-category/81/1">
-                    <span className="relative-date with-year" data-format="tiny" data-time="1485778907534">
-                      Jan '17
-                    </span>
-                  </a>
-                </td>
               </tr>
 
               <tr className="topic-list-item category-reactjs ember-view" data-topic-id="1558" id="ember40">
                 <td className="main-link clearfix" colSpan={1}>
                   <span className="link-top-line">
                     <a className="title raw-link raw-topic-link" data-topic-id="1558" href="/t/react-rails-with-redux-persist-gate/1558">
-                      React + Rails with Redux Persist Gate
+                      L'anxiété chez les enfants
                     </a>
                     <span className="topic-post-badges" />
                   </span>
@@ -113,23 +88,6 @@ Posted: Jan 30, 2017 7:21 am"
                 <td className="num posts-map posts heatmap-" title="This topic has 0 replies">
                   <a className="posts-map badge-posts heatmap-" href="">
                     <span className="number">0</span>
-                  </a>
-                </td>
-                <td className="num views ">
-                  <span className="number" title="this topic has been viewed 14 times">
-                    14
-                  </span>
-                </td>
-
-                <td
-                  className="num age activity"
-                  title="First post: Mar 20, 2019 10:55 pm
-Posted: Mar 20, 2019 10:55 pm"
-                >
-                  <a className="post-activity" href="/t/react-rails-with-redux-persist-gate/1558/1">
-                    <span className="relative-date" data-format="tiny" data-time="1553136955759">
-                      10d
-                    </span>
                   </a>
                 </td>
               </tr>

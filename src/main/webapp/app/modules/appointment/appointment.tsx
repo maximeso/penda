@@ -22,23 +22,23 @@ export class Appointment extends React.Component<IAppointmentProp> {
         <div className="rbc-calendar">
           <div className="rbc-toolbar">
             <span className="rbc-btn-group">
-              <button type="button">Today</button>
-              <button type="button">Back</button>
-              <button type="button">Next</button>
+              <button type="button">Aujourd'hui</button>
+              <button type="button">Retour</button>
+              <button type="button">Suivant</button>
             </span>
             <span className="rbc-toolbar-label">4/1/2015 — 5/1/2015</span>
             <span className="rbc-btn-group">
               <button type="button" className="">
-                Month
+                Mois
               </button>
               <button type="button" className="">
-                Week
+                Semaine
               </button>
               <button type="button" className="">
-                Work Week
+                Semaine de travail
               </button>
               <button type="button" className="">
-                Day
+                Jour
               </button>
               <button type="button" className="rbc-active">
                 Agenda
@@ -53,9 +53,9 @@ export class Appointment extends React.Component<IAppointmentProp> {
                     Date
                   </th>
                   <th className="rbc-header" style={style172}>
-                    Time
+                    Heure
                   </th>
-                  <th className="rbc-header">Event</th>
+                  <th className="rbc-header">Événements</th>
                 </tr>
               </thead>
             </table>
@@ -64,45 +64,39 @@ export class Appointment extends React.Component<IAppointmentProp> {
                 <tbody>
                   <tr>
                     <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Tue Apr 07
+                      Lundi le 1 avril 2019
                     </td>
                     <td className="rbc-agenda-time-cell">
-                      <span className="rbc-continues-after">12:00 AM</span>
+                      <span className="">19:00</span>
                     </td>
-                    <td className="rbc-agenda-event-cell">Long Event</td>
+                    <td className="rbc-agenda-event-cell">Réunion du C.A</td>
                   </tr>
                   <tr>
                     <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Wed Apr 08
+                      Mercredi le 3 avril 2019
                     </td>
                     <td className="rbc-agenda-time-cell">
-                      <span className="rbc-continues-prior rbc-continues-after">All Day</span>
+                      <span className="">19:00</span>
                     </td>
-                    <td className="rbc-agenda-event-cell">Long Event</td>
-                  </tr>
-                  <tr>
-                    <td rowSpan={2} className="rbc-agenda-date-cell">
-                      Thu Apr 09
-                    </td>
-                    <td className="rbc-agenda-time-cell">
-                      <span className="rbc-continues-prior rbc-continues-after">All Day</span>
-                    </td>
-                    <td className="rbc-agenda-event-cell">Long Event</td>
-                  </tr>
-                  <tr>
-                    <td className="rbc-agenda-time-cell">
-                      <span className="rbc-continues-after">12:00 AM</span>
-                    </td>
-                    <td className="rbc-agenda-event-cell">Some Event</td>
+                    <td className="rbc-agenda-event-cell">Réunion de parent</td>
                   </tr>
                   <tr>
                     <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Sat Apr 11
+                      Vendredi le 12 avril 2019
                     </td>
                     <td className="rbc-agenda-time-cell">
-                      <span className="rbc-continues-after">12:00 AM</span>
+                      <span className="">13:00</span>
                     </td>
-                    <td className="rbc-agenda-event-cell">Conference</td>
+                    <td className="rbc-agenda-event-cell">BBQ au CPE</td>
+                  </tr>
+                  <tr>
+                    <td rowSpan={1} className="rbc-agenda-date-cell">
+                      Lundi le 29 avril 2019
+                    </td>
+                    <td className="rbc-agenda-time-cell">
+                      <span className="">9:00</span>
+                    </td>
+                    <td className="rbc-agenda-event-cell">Déjeuner collectif</td>
                   </tr>
                 </tbody>
               </table>
