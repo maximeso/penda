@@ -3,6 +3,7 @@ package com.maximesoares.service.dto;
 import com.maximesoares.config.Constants;
 
 import com.maximesoares.domain.Authority;
+import com.maximesoares.domain.Children;
 import com.maximesoares.domain.User;
 
 import javax.validation.constraints.Email;
@@ -53,6 +54,8 @@ public class UserDTO {
 
     private Set<String> authorities;
 
+    private Set<Children> childrens;
+
     public UserDTO() {
         // Empty constructor needed for Jackson.
     }
@@ -73,6 +76,7 @@ public class UserDTO {
         this.authorities = user.getAuthorities().stream()
             .map(Authority::getName)
             .collect(Collectors.toSet());
+        this.childrens = user.getChildrens();
     }
 
     public Long getId() {
@@ -179,7 +183,15 @@ public class UserDTO {
         this.authorities = authorities;
     }
 
-    @Override
+    public Set<Children> getChildrens() {
+      return childrens;
+    }
+
+    public void setChildrens(Set<Children> childrens) {
+      this.childrens = childrens;
+    }
+
+  @Override
     public String toString() {
         return "UserDTO{" +
             "login='" + login + '\'' +

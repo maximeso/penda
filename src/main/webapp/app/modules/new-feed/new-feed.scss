@@ -1,0 +1,16 @@
+/* ==========================================================================
+Main page styles
+========================================================================== */
+.app-feed-wrapper {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.app-feed-item-img,
+.app-feed-item {
+  width: 500px;
+}

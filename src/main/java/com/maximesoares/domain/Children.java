@@ -2,6 +2,7 @@ package com.maximesoares.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -34,11 +35,13 @@ public class Children implements Serializable {
     @OneToMany(mappedBy = "children")
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Observation> observations = new HashSet<>();
+
     @ManyToMany
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     @JoinTable(name = "children_tutors",
                joinColumns = @JoinColumn(name = "children_id", referencedColumnName = "id"),
                inverseJoinColumns = @JoinColumn(name = "tutors_id", referencedColumnName = "id"))
+    @JsonIgnoreProperties("childrens")
     private Set<User> tutors = new HashSet<>();
 
     @ManyToMany(mappedBy = "childrens")

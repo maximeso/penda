@@ -48,12 +48,6 @@ export class ChildrenDetail extends React.Component<IChildrenDetailProps> {
                 : null}{' '}
             </dd>
           </dl>
-          <Button tag={Link} to="/entity/children" replace color="info">
-            <FontAwesomeIcon icon="arrow-left" />{' '}
-            <span className="d-none d-md-inline">
-              <Translate contentKey="entity.action.back">Back</Translate>
-            </span>
-          </Button>&nbsp;
           <Button tag={Link} to={`/entity/children/${childrenEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

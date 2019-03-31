@@ -27,10 +27,9 @@ export class App extends React.Component<IAppProps> {
   }
 
   render() {
-    const paddingTop = '60px';
     return (
       <Router>
-        <div className="app-container" style={{ paddingTop }}>
+        <div className="app-container">
           <ToastContainer
             position={toast.POSITION.TOP_LEFT as ToastPosition}
             className="toastify-container"
@@ -40,6 +39,7 @@ export class App extends React.Component<IAppProps> {
             <Header
               isAuthenticated={this.props.isAuthenticated}
               isAdmin={this.props.isAdmin}
+              account={this.props.account}
               currentLocale={this.props.currentLocale}
               onLocaleChange={this.props.setLocale}
               ribbonEnv={this.props.ribbonEnv}
@@ -62,6 +62,7 @@ export class App extends React.Component<IAppProps> {
 }
 
 const mapStateToProps = ({ authentication, applicationProfile, locale }: IRootState) => ({
+  account: authentication.account,
   currentLocale: locale.currentLocale,
   isAuthenticated: authentication.isAuthenticated,
   isAdmin: hasAnyAuthority(authentication.account.authorities, [AUTHORITIES.ADMIN]),

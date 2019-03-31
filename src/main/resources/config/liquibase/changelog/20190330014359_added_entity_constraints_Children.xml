@@ -18,6 +18,10 @@
                                  constraintName="fk_children_tutors_tutors_id"
                                  referencedColumnNames="id"
                                  referencedTableName="jhi_user"/>
-        
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/children_tutors.csv"
+                  separator=";"
+                  tableName="children_tutors"/>
     </changeSet>
 </databaseChangeLog>

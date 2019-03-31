@@ -39,7 +39,11 @@
         </createTable>
 
         <addPrimaryKey columnNames="children_id, tutors_id" tableName="children_tutors"/>
-        
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/children.csv"
+                  separator=";"
+                  tableName="children"/>
     </changeSet>
     <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
 </databaseChangeLog>

@@ -3,6 +3,13 @@ import { Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 import Login from 'app/modules/login/login';
+import NewFeed from 'app/modules/new-feed/new-feed';
+
+import Agenda from 'app/modules/agenda/agenda';
+import Appointment from 'app/modules/appointment/appointment';
+import Messenger from 'app/modules/messenger/messenger';
+import Forum from 'app/modules/forum/forum';
+import Recipe from 'app/modules/recipe/recipe';
 import Register from 'app/modules/account/register/register';
 import Activate from 'app/modules/account/activate/activate';
 import PasswordResetInit from 'app/modules/account/password-reset/init/password-reset-init';
@@ -38,6 +45,12 @@ const Routes = () => (
       <PrivateRoute path="/admin" component={Admin} hasAnyAuthorities={[AUTHORITIES.ADMIN]} />
       <PrivateRoute path="/account" component={Account} hasAnyAuthorities={[AUTHORITIES.ADMIN, AUTHORITIES.USER]} />
       <PrivateRoute path="/entity" component={Entities} hasAnyAuthorities={[AUTHORITIES.USER]} />
+      <ErrorBoundaryRoute path="/new-feed" component={NewFeed} />
+      <ErrorBoundaryRoute path="/messenger" component={Messenger} />
+      <ErrorBoundaryRoute path="/agenda" component={Agenda} />
+      <ErrorBoundaryRoute path="/appointment" component={Appointment} />
+      <ErrorBoundaryRoute path="/forum" component={Forum} />
+      <ErrorBoundaryRoute path="/recipe" component={Recipe} />
       <ErrorBoundaryRoute path="/" component={Home} />
     </Switch>
   </div>

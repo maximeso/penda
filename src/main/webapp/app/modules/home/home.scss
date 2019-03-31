@@ -3,8 +3,41 @@ Main page styles
 ========================================================================== */
 .hipster {
   display: inline-block;
-  width: 100%;
-  height: 497px;
-  background: url('../../../static/images/jhipster_family_member_2.svg') no-repeat center top;
+  margin-left: -250px;
+  margin-top: -120px;
+  width: 250%;
+  height: 200%;
+  background: url('../../../static/images/bambo.png') no-repeat center top;
   background-size: contain;
+}
+.container-homepage {
+  overflow: hidden;
+}
+
+.card-homepage {
+  height: 150px;
+}
+
+.card-img-homepage {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.large {
+    width: 155px;
+  }
+}
+
+.card-body-homepage {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  padding: 0;
+  flex: none;
+}
+
+.card-title-homepage {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
 }
