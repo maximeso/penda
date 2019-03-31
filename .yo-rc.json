@@ -21,23 +21,19 @@
     "buildTool": "maven",
     "useSass": true,
     "clientPackageManager": "npm",
-    "testFrameworks": [
-      "gatling",
-      "cucumber"
-    ],
+    "testFrameworks": ["gatling", "cucumber"],
     "enableTranslation": true,
     "nativeLanguage": "fr",
-    "languages": [
-      "en",
-      "fr"
-    ],
+    "languages": ["en", "fr"],
     "clientFramework": "react",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "5.8.2",
     "jwtSecretKey": "MTM2MmM5MTgzMWMyMWZlMDczNGYwNzQ1M2RmYWRmYzQ4MzBmZDk2MWU5MmJjNzgyZmY5MTk1MWM0ZWZjOGE4Mjg1MDI2MjBhOGJiOTkyYzA1NDMzYTJkMGM1YzM1ZDM4Y2VkNTRmY2MyYzQ3Yjc1MGQ5ZGM2ODkxMTc3ZWE1N2U=",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "otherModules": []
+    "otherModules": [],
+    "herokuAppName": "group-panda",
+    "herokuDeployType": "git"
   },
   "git-provider": "GitHub",
   "git-company": "maximeso",
