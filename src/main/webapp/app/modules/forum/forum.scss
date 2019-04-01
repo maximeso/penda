@@ -275,6 +275,7 @@ $wiki: green;
     }
     &:last-of-type {
       padding-right: 10px;
+      text-align: center;
     }
   }
   th {
@@ -470,10 +471,5 @@ tr {
 }
 
 .wrapper {
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-left: auto;
+  width: 70%;
 }

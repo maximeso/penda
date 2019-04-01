@@ -44,18 +44,14 @@ export class Recipe extends React.Component<IRecipeProp> {
 
                 <td className="main-link clearfix" colSpan={1}>
                   <span className="link-top-line">
-                    <a className="title raw-link raw-topic-link" data-topic-id="81" href="/t/about-the-reactjs-category/81">
-                      Hummus (trempette de pois chiches)
-                    </a>
+                    Hummus (trempette de pois chiches)
                     <span className="topic-post-badges" />
                   </span>
                   <div className="link-bottom-line" />
                 </td>
 
                 <td className="num posts-map posts heatmap-" title="This topic has 0 replies">
-                  <a className="posts-map badge-posts heatmap-" href="">
-                    <span className="number">0</span>
-                  </a>
+                  <span className="number">0</span>
                 </td>
               </tr>
             </tbody>

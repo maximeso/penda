@@ -26,13 +26,11 @@ export class NewFeed extends React.Component<INewFeedProp> {
               <span className="app-feed-item-link">Aujourd'hui, activité de peinture avec les mains !</span>
             </h2>
             <p className="app-feed-item-summary">On développe la créativité des enfants tout en s’amusant avec de la peinture.</p>
-            <a href="/react-newsfeed/articles/1">
-              <img
-                className="app-feed-item-img"
-                src="https://www.lecourrierdusud.ca/wp-content/uploads/2018/11/3garderie177123027.jpg"
-                alt="Article description"
-              />
-            </a>
+            <img
+              className="app-feed-item-img"
+              src="https://www.lecourrierdusud.ca/wp-content/uploads/2018/11/3garderie177123027.jpg"
+              alt="Article description"
+            />
           </div>
         </div>
       </Row>

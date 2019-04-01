@@ -58,49 +58,45 @@ export class Appointment extends React.Component<IAppointmentProp> {
                   <th className="rbc-header">Événements</th>
                 </tr>
               </thead>
+              <tbody>
+                <tr>
+                  <td rowSpan={1} className="rbc-agenda-date-cell">
+                    Lundi le 1 avril 2019
+                  </td>
+                  <td className="rbc-agenda-time-cell">
+                    <span className="">19:00</span>
+                  </td>
+                  <td className="rbc-agenda-event-cell">Réunion du C.A</td>
+                </tr>
+                <tr>
+                  <td rowSpan={1} className="rbc-agenda-date-cell">
+                    Mercredi le 3 avril 2019
+                  </td>
+                  <td className="rbc-agenda-time-cell">
+                    <span className="">19:00</span>
+                  </td>
+                  <td className="rbc-agenda-event-cell">Réunion de parent</td>
+                </tr>
+                <tr>
+                  <td rowSpan={1} className="rbc-agenda-date-cell">
+                    Vendredi le 12 avril 2019
+                  </td>
+                  <td className="rbc-agenda-time-cell">
+                    <span className="">13:00</span>
+                  </td>
+                  <td className="rbc-agenda-event-cell">BBQ au CPE</td>
+                </tr>
+                <tr>
+                  <td rowSpan={1} className="rbc-agenda-date-cell">
+                    Lundi le 29 avril 2019
+                  </td>
+                  <td className="rbc-agenda-time-cell">
+                    <span className="">9:00</span>
+                  </td>
+                  <td className="rbc-agenda-event-cell">Déjeuner collectif</td>
+                </tr>
+              </tbody>
             </table>
-            <div className="rbc-agenda-content">
-              <table className="rbc-agenda-table">
-                <tbody>
-                  <tr>
-                    <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Lundi le 1 avril 2019
-                    </td>
-                    <td className="rbc-agenda-time-cell">
-                      <span className="">19:00</span>
-                    </td>
-                    <td className="rbc-agenda-event-cell">Réunion du C.A</td>
-                  </tr>
-                  <tr>
-                    <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Mercredi le 3 avril 2019
-                    </td>
-                    <td className="rbc-agenda-time-cell">
-                      <span className="">19:00</span>
-                    </td>
-                    <td className="rbc-agenda-event-cell">Réunion de parent</td>
-                  </tr>
-                  <tr>
-                    <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Vendredi le 12 avril 2019
-                    </td>
-                    <td className="rbc-agenda-time-cell">
-                      <span className="">13:00</span>
-                    </td>
-                    <td className="rbc-agenda-event-cell">BBQ au CPE</td>
-                  </tr>
-                  <tr>
-                    <td rowSpan={1} className="rbc-agenda-date-cell">
-                      Lundi le 29 avril 2019
-                    </td>
-                    <td className="rbc-agenda-time-cell">
-                      <span className="">9:00</span>
-                    </td>
-                    <td className="rbc-agenda-event-cell">Déjeuner collectif</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
       </Row>
