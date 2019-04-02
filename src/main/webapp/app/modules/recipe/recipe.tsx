@@ -51,7 +51,29 @@ export class Recipe extends React.Component<IRecipeProp> {
                 </td>
 
                 <td className="num posts-map posts heatmap-" title="This topic has 0 replies">
-                  <span className="number">0</span>
+                  <span className="number">42</span>
+                </td>
+              </tr>
+              <tr className="topic-list-item category-reactjs has-excerpt pinned ember-view" data-topic-id="81" id="ember38">
+                <td className="posters">
+                  <img
+                    alt=""
+                    className="avatar latest single"
+                    src="https://www.asthme-allergies.info/wp-content/uploads/2016/03/UNE_63693757_M.jpg"
+                    width="100"
+                  />
+                </td>
+
+                <td className="main-link clearfix" colSpan={1}>
+                  <span className="link-top-line">
+                    Alergies
+                    <span className="topic-post-badges" />
+                  </span>
+                  <div className="link-bottom-line" />
+                </td>
+
+                <td className="num posts-map posts heatmap-" title="This topic has 0 replies">
+                  <span className="number">64</span>
                 </td>
               </tr>
             </tbody>

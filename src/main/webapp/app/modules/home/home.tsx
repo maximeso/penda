@@ -16,7 +16,6 @@ export class Home extends React.Component<IHomeProp> {
   }
 
   render() {
-    const { account } = this.props;
     return (
       <Row className="container-homepage">
         <Col md="9">
@@ -24,7 +23,7 @@ export class Home extends React.Component<IHomeProp> {
             <Translate contentKey="home.title">Welcome, Java Hipster!</Translate>
           </h2>
           <Row>
-            <Col md="4">
+            <Col xs="6" md="6" lg="6" xl="4" className="col-homepage">
               <Link className="link-homepage" to="/new-feed">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/group.png" />
@@ -34,7 +33,7 @@ export class Home extends React.Component<IHomeProp> {
                 </Card>
               </Link>
             </Col>
-            <Col md="4">
+            <Col xs="6" md="6" lg="6" xl="4" className="col-homepage">
               <Link className="link-homepage" to="/agenda">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage large" src="/content/images/agenda.png" />
@@ -44,7 +43,7 @@ export class Home extends React.Component<IHomeProp> {
                 </Card>
               </Link>
             </Col>
-            <Col md="4">
+            <Col xs="6" md="6" lg="6" xl="4" className="col-homepage">
               <Link className="link-homepage" to="/messenger">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/messenger.png" />
@@ -54,10 +53,7 @@ export class Home extends React.Component<IHomeProp> {
                 </Card>
               </Link>
             </Col>
-          </Row>
-          <br />
-          <Row>
-            <Col md="4">
+            <Col xs="6" md="6" lg="6" xl="4" className="col-homepage">
               <Link className="link-homepage" to="/forum">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage large" src="/content/images/forum.png" />
@@ -67,7 +63,7 @@ export class Home extends React.Component<IHomeProp> {
                 </Card>
               </Link>
             </Col>
-            <Col md="4">
+            <Col xs="6" md="6" lg="6" xl="4" className="col-homepage">
               <Link className="link-homepage" to="/appointment">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/appointment.png" />
@@ -77,7 +73,7 @@ export class Home extends React.Component<IHomeProp> {
                 </Card>
               </Link>
             </Col>
-            <Col md="4">
+            <Col xs="6" md="6" lg="6" xl="4" className="col-homepage">
               <Link className="link-homepage" to="/recipe">
                 <Card className="card-homepage">
                   <CardImg className="card-img-homepage" src="/content/images/recipe.png" />
@@ -90,7 +86,7 @@ export class Home extends React.Component<IHomeProp> {
           </Row>
         </Col>
         <Col md="3" className="pad img-homepage">
-          <span className="hipster rounded" />
+          <img className="img-fluid" src="/content/images/bambo.png" />
         </Col>
       </Row>
     );

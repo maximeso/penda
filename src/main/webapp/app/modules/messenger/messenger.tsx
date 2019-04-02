@@ -30,35 +30,30 @@ export class Messenger extends React.Component<INewFeedProp> {
           </div>
           <div className="message-list-container">
             <div className="message mine start end">
-              <div className="timestamp">Lundi le 1 avril, 2019 3:46 PM</div>
+              <div className="timestamp">Lundi le 1 avril, 2019 7:46 AM</div>
               <div className="bubble-container">
                 <div className="bubble" title="Saturday, March 30, 2019 3:46 PM">
-                  Bonjour!
+                  Bonjour,
                   <br />
-                  Je voulais savoir si vous avez été mis au courant de la nouvelle allergie de mon enfant au kiwi.
+                  Je vous avise que Milan ne viendra pas au CPE aujourd'hui.
                   <br />
                   Merci
                 </div>
               </div>
             </div>
-            <div className="message  start ">
+            <div className="message  start end">
               <div className="bubble-container">
                 <div className="bubble" title="Saturday, March 30, 2019 3:46 PM">
-                  Bonjour à vous!
-                </div>
-              </div>
-            </div>
-            <div className="message   end">
-              <div className="bubble-container">
-                <div className="bubble" title="Saturday, March 30, 2019 3:46 PM">
-                  Oui, on m'a averti de l'allergie de votre enfant.
+                  Bonjour, je vous remercie de m'aviser.
+                  <br />
+                  Bonne journée.
                 </div>
               </div>
             </div>
             <div className="message mine start end">
               <div className="bubble-container">
                 <div className="bubble" title="Saturday, March 30, 2019 3:46 PM">
-                  Parfait merci et bonne soirée.
+                  Bienvenu. Excellente journée à vous.
                 </div>
               </div>
             </div>
