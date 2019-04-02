@@ -86,7 +86,7 @@ export class Home extends React.Component<IHomeProp> {
           </Row>
         </Col>
         <Col md="3" className="pad img-homepage">
-          <img className="img-fluid" src="/content/images/bambo.png" />
+          <img width="100%" height="100%" src="/content/images/bambo.png" />
         </Col>
       </Row>
     );
